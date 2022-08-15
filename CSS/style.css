@@ -1,0 +1,354 @@
+/* Manejar SAAS variables de CSS, estructura de Koala, KOALA SCSS, por ejemplo: Lo díficil de cpiar y pegar los colores para el botón */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #2884FF;
+    --color-second: #3E26E8;
+    --color-text: #fff;
+    --paddingsecciones: 6rem 0;
+    --margin-elements: 3.5rem;
+    --roboto: 'Roboto', sans-serif;
+    --font-oswald:  'Oswald', sans-serif;
+    --font-opensans:  'Open Sans', sans-serif;
+    --font-serif: 'PT Serif', serif;
+    --bold-letter: 700;
+    --color-bg: #1b088580;
+    --color-hover: #9bca0f;
+    --color-black: #000;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 75rem;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingsecciones);
+}
+
+/* Menu de navegación */
+
+.menu-navegacion{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    font-family: var(--font-opensans);
+    font-weight: var(--bold-letter);
+    font-size: 1.1rem;
+}
+
+.logo {
+    height: 4rem;
+}
+
+.logo img {
+    margin-top: 0.5rem;
+    display: block;
+    height: 100%;
+    border-radius: 8rem 3rem 6rem 0;
+    border: 0.12rem dashed var(--color-black);
+    box-shadow: 18px 3rem 0rem 20px rgb(255, 225, 0);
+    transition: all .7s;
+    clip-path: circle(100% at 14% top);
+}
+
+.logo img:hover {
+    clip-path: circle(100px at center top);
+}
+
+.enlaces li {
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: var(--color-black);
+    margin-left: 0.8rem;
+    line-height: 4rem;
+}
+
+.enlaces a:hover {
+    color: #9bca0f;
+}
+
+.enlaces a:active {
+    color: rgb(255, 0, 0);
+}
+
+.hero {
+    height: 35rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../RECURSOS/Imágenes/header2.PNG");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.contenedor-textos {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulohero {
+    font-family: var(--font-oswald);
+    font-size: 2.2rem;
+    color: var(--color-text);
+    font-weight: var(--bold-letter);
+    margin-top: 0.5rem;
+}
+
+.textohero {
+    font-family: var(--roboto);
+    font-size: 1.5rem;
+    font-weight: var(--bold-letter);
+    color: var(--color-text);
+    margin-top: 1rem;
+}
+
+#mifoto{
+    width: 18rem;
+    height: 18rem;
+    margin-top: 0.7rem;
+    box-shadow: 0 5px 10px var(--color-black);
+}
+
+.mifoto {
+    background-color: var(--color-text);
+    margin-top: 1rem;
+    width: 19rem;
+    height: 20rem;
+    transition: all 0.4s;
+}
+
+.mifoto:hover {
+    -moz-transform: rotate(5deg);  
+    -webkit-transform: rotate(5deg);
+}
+
+.btn-a {
+    width: 12rem;
+    display: block;
+    margin: auto;
+    padding: 1rem 0;
+    background-color: #000;
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: var(--bold-letter);
+}
+
+.btn-a:hover {
+    border: 0.3rem solid var(--color-text);
+    background: transparent;
+    transition: color 2s linear 1s;
+}
+
+/* Main */
+
+.title-main {
+    text-align: center;
+    font-size: 2.4rem;
+    color:var(--color-black);
+    font-weight: var(--bold-letter);
+}
+
+.texto-main {
+    text-align: center;
+    color: var(--color-black);
+    font-family: var(--font-opensans);
+    font-size: 1.2rem;
+    margin: 1.3rem 0;
+}
+
+.beneficios {
+    padding-top: var(--margin-elements);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.beneficio {
+    font-size: 1.4rem;
+    font-weight: var(--bold-letter);
+    width: 10em;
+    height: 10em;
+    background: linear-gradient(rgba(90, 90, 90, 0.8), rgba(23, 45, 0, 0.5), rgba(168, 224, 79, 0.158)), url("../RECURSOS/Imágenes/IMG-20220812-WA0004.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.7s;
+}
+
+.beneficio:hover {
+    transform: scale(1.12);
+    border: 0.3rem solid #000;
+    color: rgba(255, 252, 65, 0.623);
+}
+
+.proyects {
+    background: #f2f2f2;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedor-imagenes img {
+    display: flex; 
+    width: 45%;
+    box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.5);
+    margin-bottom: var(--margin-elements);
+    transition: all 0.5s;
+}
+
+.contenedor-imagenes #img-left:hover {
+    transform: translate(-50px);
+}
+
+.contenedor-imagenes #img-rigth:hover {
+    transform: translate(50px);
+}
+
+footer .titulo-seccion{
+    color: #3E26E8;
+}
+
+footer .texto-main {
+    color: #000;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales a{
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    padding: 0 1.1rem 0 1.1rem;
+}
+
+.redes-sociales a:hover{
+    color: var(--color-hover);
+}
+
+.hero2 {
+    background: #F2F2F2;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.texto-letter {
+    width: 100%;
+    color: transparent;
+    font-family: var(--font-serif);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14rem;
+    font-weight: var(--bold-letter);
+
+    background-image: url("../RECURSOS/Imágenes/DULESA.jpg");
+    background-size: contain;
+    background-position: center;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width:800px) {
+    .menu-navegacion {
+        flex-direction: column;
+        height: 8rem;
+        justify-content: space-evenly;
+    }
+
+    .titulohero {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .textohero {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .btn-a {
+        margin-bottom: 4rem;
+        border-radius: 20px;
+        width: 9rem;
+        font-size: 1rem;
+    }
+    .hero {
+        height: 30rem;
+    }
+    .beneficio{
+        margin-bottom: 40px;
+    }
+    .contenedor-imagenes img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .menu-navegacion {
+        flex-direction: column;
+        height: 12rem;
+        justify-content: space-evenly;
+    }
+    .hero {
+        height: 40rem;
+    }
+    .btn-a {
+        margin-bottom: 2rem;
+        border-radius: 20px;
+        width: 9rem;
+        font-size: 1rem;
+    }
+    .contenedor-imagenes img{
+        width: 90%;
+    }
+
+    footer {
+        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../RECURSOS/Imágenes/90913bd041a10c2b1b3b4e10fce007bc.jpg");
+        color: var(--color-text);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    footer .titulo-seccion {
+        color: var(--color-text);
+    }
+
+    footer .texto-main{
+        color: var(--color-text);
+    }
+
+    .redes-sociales a{
+        color:var(--color-text);
+    }
+
+    .texto-letter {
+        font-size: 600%;
+    }
+}
