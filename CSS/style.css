@@ -18,7 +18,7 @@
     --font-serif: 'PT Serif', serif;
     --bold-letter: 700;
     --color-bg: #1b088580;
-    --color-hover: #9bca0f;
+    --color-hover: #c40fca;
     --color-black: #000;
 }
 
@@ -37,25 +37,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4rem;
+    height: 5.5rem;
     font-family: var(--font-opensans);
     font-weight: var(--bold-letter);
     font-size: 1.1rem;
 }
 
 .logo {
-    height: 4rem;
+    height: 5rem;
+    padding: 1.5rem;
 }
 
 .logo img {
-    margin-top: 0.5rem;
+    margin-top: 0.00rem;
     display: block;
     height: 100%;
-    border-radius: 8rem 3rem 6rem 0;
-    border: 0.12rem dashed var(--color-black);
-    box-shadow: 18px 3rem 0rem 20px rgb(255, 225, 0);
-    transition: all .7s;
-    clip-path: circle(100% at 14% top);
 }
 
 .logo img:hover {
@@ -75,7 +71,7 @@
 }
 
 .enlaces a:hover {
-    color: #9bca0f;
+    color: var(--color-hover);
 }
 
 .enlaces a:active {
@@ -84,11 +80,11 @@
 
 .hero {
     height: 35rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../RECURSOS/Imágenes/header2.PNG");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../RECURSOS/Imágenes/header3.PNG");
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat;
     text-align: center;
 }
 
@@ -310,12 +306,22 @@ footer .texto-main {
 
 @media screen and (max-width:700px) {
     .menu-navegacion {
-        flex-direction: column;
+        display: flex;
         height: 12rem;
-        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        text-align: center;
     }
     .hero {
         height: 40rem;
+    }
+    .logo img {
+        margin-top: 0.20000000000000018rem;
+    }
+    .logo {
+        height: 7.5rem;
     }
     .btn-a {
         margin-bottom: 2rem;
@@ -328,10 +334,10 @@ footer .texto-main {
     }
 
     footer {
-        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../RECURSOS/Imágenes/90913bd041a10c2b1b3b4e10fce007bc.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../RECURSOS/Imágenes/footer\ \(2\).jpg");
         color: var(--color-text);
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: top top;
         background-size: cover;
         background-attachment: fixed;
     }
