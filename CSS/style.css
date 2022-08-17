@@ -199,12 +199,16 @@
 
 .proyects {
     background: #f2f2f2;
+    border-bottom: 0.3rem solid var(--color-black);
+    border-top: 0.3rem solid var(--color-black);
 }
 
 .contenedor-imagenes {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background: url(../RECURSOS/Imágenes/hands.PNG);
+    padding: var(--paddingsecciones);
 }
 
 .contenedor-imagenes img {
@@ -248,8 +252,11 @@ footer .texto-main {
 }
 
 .hero2 {
-    background: #F2F2F2;
-    min-height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../RECURSOS/Imágenes/wallpaper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 40vh;
     display: flex;
     align-items: center;
 }
@@ -262,7 +269,7 @@ footer .texto-main {
     font-size: 14rem;
     font-weight: var(--bold-letter);
 
-    background-image: url("../RECURSOS/Imágenes/regalos.jpg");
+    background:#f2f2f2;
     background-size: contain;
     background-position: center;
 
@@ -270,6 +277,22 @@ footer .texto-main {
     -webkit-background-clip: text;
 
     -webkit-text-fill-color: transparent;
+}
+
+.text-ref {
+    font-family: var(--font-opensans);
+    font-weight: 700;
+    text-align: center;
+    line-height: 3rem;
+    font-style: italic;
+    border-bottom: 0.3rem solid var(--color-black);
+    border-top: 0.3rem solid var(--color-black);
+}
+
+.text-ref::after {
+    content: "~";
+    color: var(--color-black);
+    font-size: 5rem;
 }
 
 @media screen and (max-width:800px) {
@@ -356,5 +379,10 @@ footer .texto-main {
 
     .texto-letter {
         font-size: 600%;
+    }
+    .contenedor-imagenes {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../RECURSOS/Imágenes/hands.PNG);
+        background-position: center;
+        border-radius: 20px;
     }
 }
