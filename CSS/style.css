@@ -47,6 +47,7 @@ html {
     background-color: var(--color-bg);
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -485,6 +486,5 @@ footer .texto-main {
     .mifoto:hover {
         -moz-transform: rotate(0);  
         -webkit-transform: rotate(0);
-        position: absolute;
     }
 }
