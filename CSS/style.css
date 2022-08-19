@@ -411,14 +411,15 @@ footer .texto-main {
 @media screen and (max-width:700px) {
     .menu-navegacion {
         display: flex;
-        height: 10rem;
+        height: 12rem;
         flex-direction: column;
         text-align: center;
         flex-wrap: nowrap;
         margin-left: -95px;
     }
     .main-nav{
-        transform: translateY(-200%);
+        transform: translateY(-300%);
+        transition: transform 0.3s;
     }
 
     .main-nav img
@@ -443,12 +444,11 @@ footer .texto-main {
         height: 40rem;
     }
     .logo img {
-        margin-top: 42px;
+        margin-top: 10px;
         margin-left: 100px;
-        margin-bottom: 8px;
     }
     .logo {
-        height: 9.5rem;
+        height: 10rem;
     }
     .btn-a {
         margin-bottom: 2rem;
