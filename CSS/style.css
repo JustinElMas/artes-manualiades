@@ -7,11 +7,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --color-primary: #2884FF;
     --color-second: #3E26E8;
     --color-text: #fff;
-    --paddingsecciones: 6rem 0;
+    --paddingsecciones: 5rem 0;
     --margin-elements: 3.5rem;
     --roboto: 'Roboto', sans-serif;
     --font-oswald:  'Oswald', sans-serif;
@@ -24,16 +28,11 @@
 }
 
 .contenedor {
-    width: 90%;
-    max-width: 75rem;
     margin: auto;
     overflow: hidden;
     padding: var(--paddingsecciones);
 }
 
-header {
-    background-color: var(--color-bg);
-}
 /* Menu de navegación */
 
 .menu-navegacion{
@@ -45,6 +44,9 @@ header {
     font-family: var(--font-opensans);
     font-weight: var(--bold-letter);
     font-size: 1.1rem;
+    background-color: var(--color-bg);
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -59,32 +61,34 @@ header {
     border-radius: 100%;
 }
 
+
 .logo img:hover {
     clip-path: circle(100px at center top);
 }
 
-.enlaces li {
-    list-style: none;
-    display: inline-block;
+.enlaces a:hover {
+    background-color: rgba(255, 68, 0, 0.308);
+    color: var(--color-text);
 }
 
 .enlaces a {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
     text-decoration: none;
     color: var(--color-black);
     margin-left: 0.8rem;
     line-height: 4rem;
+    transition: 0.6s ease;
 }
 
-.enlaces a:hover {
-    color: var(--color-text);
-}
 
 .enlaces a:active {
     color: rgb(255, 0, 0);
 }
 
 .hero {
-    height: 35rem;
+    height: 36.5rem;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../RECURSOS/Imágenes/header3.PNG");
     background-position: center;
     background-attachment: fixed;
@@ -139,25 +143,88 @@ header {
 }
 
 .btn-a {
-    width: 12   rem;
+    width: 12rem;
     display: block;
     margin: auto;
     padding: 1rem 0;
-    background-color: #000;
-    color: var(--color-text);
+    background-color: var(--color-text);
+    color: var(--color-black);
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: var(--bold-letter);
+    border-radius: 20px 0 20px 0;
 }
 
 .btn-a:hover {
     border: 0.3rem solid var(--color-text);
     background: transparent;
-    transition: color 2s linear 1s;
+    /* transition: color 2s linear 1s; */
+    color: var(--color-text);
 }
 
 /* Main */
 
+/* main-articles */
+
+.main-article{
+    min-height: 100vh;
+    border-top: 0.3rem solid var(--color-black);
+}
+
+.main-article .content p {
+    font-family: var(--font-oswald);
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.main-article .content h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: var(--bold-letter);
+    padding-top: 20px;
+}
+
+.main-article .content img {
+    width: 32%;
+    height: 30%;
+}
+
+.container-articles {
+    max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+aside {
+    width: 20%;
+    min-width: 30%;
+    margin: 40px 30px 30px 0;
+    height: 100%;
+    background-color: #ffaa64;
+    padding: 20px;
+    border-radius: 20px;
+    position: sticky;
+    top: 15px;
+}
+
+aside .title-store {
+    font-family: var(--font-opensans);
+    font-weight: var(--bold-letter);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+aside .items-article a{
+    display: block;
+    margin-bottom: 10px;
+    color: var(--color-text);
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--font-serif);
+    font-weight: var(--bold-letter);
+    font-size: 1.2rem;
+}
 .title-main {
     text-align: center;
     font-size: 2.4rem;
@@ -203,8 +270,10 @@ header {
 }
 
 .proyects {
-    background: #f2f2f2;
-    border-bottom: 0.3rem solid var(--color-black);
+    width: 90rem;
+    max-width: 75rem;
+    margin: auto;
+    overflow: hidden;
     border-top: 0.3rem solid var(--color-black);
 }
 
@@ -214,14 +283,16 @@ header {
     flex-wrap: wrap;
     background: url(../RECURSOS/Imágenes/hands.PNG);
     padding: var(--paddingsecciones);
+    border-radius: 25px;
 }
 
 .contenedor-imagenes img {
     display: flex; 
-    width: 45%;
+    width: 30%;
     box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.5);
     margin-bottom: var(--margin-elements);
     transition: all 0.5s;
+    border-radius: 20px;
 }
 
 .contenedor-imagenes #img-left:hover {
@@ -291,7 +362,6 @@ footer .texto-main {
     line-height: 3rem;
     font-style: italic;
     border-bottom: 0.3rem solid var(--color-black);
-    border-top: 0.3rem solid var(--color-black);
 }
 
 .text-ref::after {
@@ -300,7 +370,7 @@ footer .texto-main {
     font-size: 5rem;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
     .menu-navegacion {
         flex-direction: column;
         height: 8rem;
@@ -341,7 +411,6 @@ footer .texto-main {
         align-content: center;
         flex-direction: row;
         text-align: center;
-        width: 100%;
     }
     .hero {
         height: 40rem;
@@ -358,6 +427,18 @@ footer .texto-main {
         border-radius: 20px;
         width: 9rem;
         font-size: 1rem;
+    }
+    .enlaces a {
+        padding: 0;
+        margin: 0 0;
+    }
+
+    .enlaces a:hover {
+        border-radius: 20px;
+    }
+
+    .proyects {
+        width: 90%;
     }
     .contenedor-imagenes img{
         width: 90%;
@@ -391,5 +472,19 @@ footer .texto-main {
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../RECURSOS/Imágenes/hands.PNG);
         background-position: center;
         border-radius: 20px;
+    }
+    .main-article .container-articles {
+		flex-direction: column;
+	}
+
+    aside {
+        width: 100%;
+        text-align: center;
+        border-radius: 4px;
+    }
+    .mifoto:hover {
+        -moz-transform: rotate(0);  
+        -webkit-transform: rotate(0);
+        position: absolute;
     }
 }

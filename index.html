@@ -15,40 +15,38 @@
 </head>
 <body>
 
-    <header>
+    <header class="container-nav">
         <nav class="menu-navegacion contenedor">
             <div class="logo">
-                <img src="./RECURSOS/logo/logo-artes-manualidades-PA.PNG" alt="logo-RA">
+                <img src="./RECURSOS/logo/logo-artes-manualidades-PA.PNG" alt="logo-RA" id="iconm">
             </div>
 
             <div class="enlaces">
-                <ul>
-                    <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#conocenos">Conoce más</a></li>
-                    <li><a href="#beneficios">Servicios</a></li>
-                    <li><a href="#callme">Contácto</a></li>
-                </ul>
+                <a href="#hero">Inicio</a>
+                <a href="#conocenos">Conoce más</a>
+                <a href="#beneficios">Servicios</a>
+                <a href="#callme">Contácto</a>
             </div>
         </nav>
 
-            <section class="hero" id="hero">
-                <div class="contenedor-textos contenedor">
-                    <h2 class="titulohero">El arte es para el ser humano lo que demuestra que la vida es bella.</h2>
-                    <div class="mifoto">
-                        <img src="./RECURSOS/Imágenes/detalle-cartera.jpg" alt="mifoto" id="mifoto">
-                    </div>
-                    <p class="textohero">
-                        Tienda de detalles para toda ocasión. Baby Shower, fiestas infantiles, bautizos, celebraciones y más.
-                    </p>
-                    <a href="#" class="btn-a">Más información</a>
+        <section class="hero" id="hero">
+            <div class="contenedor-textos contenedor">
+                <h2 class="titulohero">El arte es para el ser humano lo que demuestra que la vida es bella.</h2>
+                <div class="mifoto">
+                    <img src="./RECURSOS/Imágenes/detalle-cartera.jpg" alt="mifoto" id="mifoto">
                 </div>
-            </section>
+                <p class="textohero">
+                    Tienda de detalles para toda ocasión. Baby Shower, fiestas infantiles, bautizos, celebraciones y más.
+                </p>
+                <a href="#blog-articles" class="btn-a">Más información</a>
+            </div>
+        </section>
     </header>
 
     <main>
         <section class="contenedor">
-            <h2 class="title-main">Ropa y promociones que no te peudes perder: </h2>
-            <p class="texto-main">Servicios y promociones: </p>
+            <h2 class="title-main">Cuando nos visites puedes encontrar: </h2>
+            <p class="texto-main">Servicios y promociones en: </p>
 
             <div class="beneficios" id="beneficios">
                 <div class="beneficio">
@@ -64,6 +62,55 @@
 
         </section>
 
+        <!-- article and blog options and precios -->
+        <main id="blog-articles" class="main-article">
+            <div class="container-articles">
+                <aside>
+                    <h3 class="title-store">Categorias en la tienda:</h3>
+                    <nav class="items-article">
+                        <a href="#blog-articles">Empaques</a>
+                        <a href="#empaques">Fiesta</a>
+                        <a href="#fiesta">Lenceria y cintas</a>
+                        <a href="#lenceria">Manualidades</a>
+                    </nav>
+                </aside>
+                <div class="content">
+                    <div class="post" id="empaques">
+                        <h1>Empaques</h1>
+                        <p>Lorem</p>
+                        <img src="./RECURSOS/Imágenes/Empaques.jpg" alt="img-de-empaque">
+                        <img src="./RECURSOS/Imágenes/Empaques.jpg" alt="img-de-empaque">
+                        <img src="./RECURSOS/Imágenes/Empaques.jpg" alt="img-de-empaque">
+                        <p>Precio: 2.000 pesos</p>
+                    </div>
+                    <div class="post" id="fiesta">
+                        <h1>Fiesta</h1>
+                        <p>Lorem</p>
+                        <img src="./RECURSOS/Imágenes/Fiesta.jpg" alt="img-de-fiesta">
+                        <img src="./RECURSOS/Imágenes/Fiesta.jpg" alt="img-de-fiesta">
+                        <img src="./RECURSOS/Imágenes/Fiesta.jpg" alt="img-de-fiesta">
+                        <p>Precio: 2.000 pesos</p>
+                    </div>
+                    <div class="post" id="lenceria">
+                        <h1>Lenceria y cintas</h1>
+                        <p>Lorem</p>
+                        <img src="./RECURSOS/Imágenes/Lencerias-cintas.jpg" alt="img-de-lenceria">
+                        <img src="./RECURSOS/Imágenes/Lencerias-cintas.jpg" alt="img-de-lenceria">
+                        <img src="./RECURSOS/Imágenes/Lencerias-cintas.jpg" alt="img-de-lenceria">
+                        <p>Precio: 2.000 pesos</p>
+                    </div>
+                    <div class="post" id="manualidades">
+                        <h1>Manualidades</h1>
+                        <p>Lorem</p>
+                        <img src="./RECURSOS/Imágenes/manualidades.jpg" alt="img-de-¿manulidades">
+                        <img src="./RECURSOS/Imágenes/manualidades.jpg" alt="img-de-¿manulidades">
+                        <img src="./RECURSOS/Imágenes/manualidades.jpg" alt="img-de-¿manulidades">
+                        <p>Precio: 2.000 pesos</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
         <section class="proyects" id="conocenos">
             <div class="contenedor">
                 <h2 class="title-main">Detalles que hacen tu día mejor: </h2>
@@ -73,7 +120,7 @@
                     <img id="img-rigth" src="./RECURSOS/Imágenes/IMG-20220812-WA0017.jpg" alt="project7">
                     <img id="img-left" src="./RECURSOS/Imágenes/IMG-20220812-WA0011.jpg" alt="project6">
                     <img id="img-rigth" src="./RECURSOS/Imágenes/IMG-20220812-WA0012.jpg" alt="project5">
-                    <img id="img-left" src="./RECURSOS/Imágenes/IMG-20220812-WA0016.jpg " alt="project3">
+                    <img id="img-left" src="./RECURSOS/Imágenes/arte3.jpg " alt="project3">
                     <img id="img-rigth" src="./RECURSOS/Imágenes/footer.jpg" alt="project2">
                 </div>
             </div>
@@ -84,6 +131,9 @@
                 <h1 class="texto-letter">A & M</h1>
             </div>
         </section>
+
+        <!-- Next time edit you will make the FORM in the rigth miti-miti, and add the button whats, cookies -->
+
     </main>
     
     <div class="text-referent">
@@ -114,8 +164,6 @@
             <p class="texto-main">Justin Guillén - Todos los derechos reservados &copy; 2023</p>
         </div>
     </footer>
-
- 
 
 </body>
 </html>
