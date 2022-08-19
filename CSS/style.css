@@ -418,7 +418,7 @@ footer .texto-main {
         margin-left: -95px;
     }
     .main-nav{
-        transform: translateY(-300%);
+        transform: translateY(-305%);
         transition: transform 0.3s;
     }
 
