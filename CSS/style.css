@@ -309,12 +309,19 @@ aside .items-article a{
     transform: translate(50px);
 }
 
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.6), rgba(0, 0 , 0, 0.6)), url(../RECURSOS/Fondos/publicidad-de-amor-amistad.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 footer .titulo-seccion{
-    color: #3E26E8;
+    color: var(--color-text);
 }
 
 footer .texto-main {
-    color: #000;
+    color: var(--color-text);
 }
 
 .redes-sociales {
@@ -324,7 +331,7 @@ footer .texto-main {
 
 .redes-sociales a{
     text-decoration: none;
-    color: #000;
+    color: var(--color-text);
     font-size: 2rem;
     padding: 0 1.1rem 0 1.1rem;
 }
