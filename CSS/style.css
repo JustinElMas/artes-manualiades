@@ -376,6 +376,47 @@ footer .texto-main {
     font-size: 5rem;
 }
 
+.labelito {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.svg-sitdown img {
+    max-width: 100%;
+}
+.svg-sitdown {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 15px;
+}
+
+.container-svg-max {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelito:active {
+    box-shadow: 1px 5px 8px var(--color-bg);
+    transition: 0.8s ease;
+}
+
 @media screen and (max-width: 800px) {
     .menu-navegacion {
         flex-direction: column;
@@ -523,6 +564,9 @@ footer .texto-main {
 
     .enlaces{
         width: 220px;
+    }
+    .anuncio-mail {
+        padding: 0 20px;
     }
 }
 
