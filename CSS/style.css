@@ -1,5 +1,7 @@
 /* Manejar SAAS variables de CSS, estructura de Koala, KOALA SCSS, por ejemplo: Lo díficil de cpiar y pegar los colores para el botón */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,500&family=Edu+QLD+Beginner:wght@400;500;700&family=Hachi+Maru+Pop&family=Noto+Serif:wght@400;700&family=Roboto:wght@400;700&family=Sigmar+One&display=swap');
+
 
 * {
     margin: 0;
@@ -21,6 +23,8 @@ html {
     --font-oswald:  'Oswald', sans-serif;
     --font-opensans:  'Open Sans', sans-serif;
     --font-serif: 'PT Serif', serif;
+    --font-workSans: 'Sigmar One', cursive;
+    --cursive:'Dancing Script', cursive;
     --bold-letter: 700;
     --color-bg: #ffaa64;
     --color-hover: #c40fca;
@@ -369,7 +373,7 @@ footer .texto-main {
 }
 
 .text-ref {
-    font-family: var(--font-opensans);
+    font-family: var(--cursive);
     font-weight: 700;
     text-align: center;
     line-height: 3rem;
@@ -543,23 +547,23 @@ footer .texto-main {
     }
 
     footer {
-        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../RECURSOS/Fondos/publicidad-de-amor-amistad.jpg");
-        color: var(--color-text);
+        background: linear-gradient(rgba(236, 153, 84, 0.884), rgba(255, 255, 255, 0.65), rgba(255, 170, 100, 0.644)), url("../RECURSOS/Fondos/publicidad-de-amor-amistad.jpg");
+        color: var(--color-black);
         background-repeat: no-repeat;
-        background-size: 161vw;
+        background-size: 272vw;
         background-position: center;
     }
 
     footer .titulo-seccion {
-        color: var(--color-text);
+        color: var(--color-black);
     }
 
     footer .texto-main{
-        color: var(--color-text);
+        color: var(--color-black);
     }
 
     .redes-sociales a{
-        color:var(--color-text);
+        color:var(--color-black);
     }
 
     .texto-letter {
@@ -591,7 +595,7 @@ footer .texto-main {
     }
 
     .enlaces{
-        width: 220px;
+        width: 307px;
     }
     .anuncio-mail {
         padding: 0 20px;
@@ -621,8 +625,83 @@ footer .texto-main {
         height: 6rem;
         background:#ffaa64;
     }
-}
+    .contact-footer a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.22rem;
+        font-family: var(--font-oswald);
+        font-weight: var(--bold-letter);
+    }
+    .contact-footer {
+        color: #000;
+        font-size: 0.7rem;
+        font-family: var(--font-oswald);
+        font-weight: var(--bold-letter);
+    }
+    .horarios {
+        background-color: wheat;
+        border: 0.1rem solid #000;
+        border-radius: 0 20px 20px 0;
+        margin-top: 20px;
+        width: 68%;
+        height: 3.7rem;
+        margin-left: -2.3rem;
+    }
 
+    .horarios ul li {
+        list-style: none;
+    }
+    .adress {
+        font-family: var(--font-workSans);
+        font-weight: var(--bold-letter);
+        font-size: 1.2rem;
+        margin: 6px 10px;
+    }
+    .icon-adress {
+        color: #000;
+        font-size: 1.5rem;
+    }
+
+    .contenedor {
+        text-align: center;
+        margin-bottom: -29px;
+        margin-top: -80px;
+    }
+
+    .infostore-p {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .info-footer-container{
+        background-color: #fff;
+        border-top: 0.2rem solid #000;
+        border-bottom: 0.2rem solid #000;
+        margin-top: 1px;
+    }
+
+    .icon-adress span {
+        text-align: center;
+    }
+
+    .text-ref {
+        border: none;
+    }
+
+    .text-foot{
+        margin-bottom: 0;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: var(--bold-letter);
+    }
+    .infostore-p {
+        font-family: var(--font-serif);
+    }
+
+    .contenedor-2 .texto-main{
+        margin-bottom: 0;
+    }
+}
 @media  screen and (min-width: 780px) {
     .toggle-menu {
         display: none;
