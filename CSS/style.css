@@ -439,6 +439,68 @@ footer .texto-main {
     transition: 0.8s ease;
 }
 
+/* footer */ 
+
+.text-foot{
+    text-align: center;
+    color: #000;
+    background-color: #ffaa64;
+    font-family: var(--font-oswald);
+    font-size: 2rem;
+    text-shadow: 2px 0 1px var(--color-black);
+    letter-spacing: 2.5px;
+    border-bottom: 0.4rem double #fff;
+}
+
+.info-footer-container {
+    color: var(--color-text);
+    text-align: center;
+}
+
+.info-footer-container p {
+    font-size: 1.3rem;
+    font-family: var(--font-serif);
+    font-weight: 700;
+}
+
+.icon-adress {
+    text-align: center;
+
+}
+
+.contact-footer {
+    text-align: center;
+    background: linear-gradient(rgba(255, 176, 124, 0.774), rgba(255, 188, 126, 0.781), rgba(153, 104, 72, 0.5));
+    width: 50%;
+    margin:auto;
+    border-radius: 20px;
+}
+
+.contact-footer ul {
+    color: #fff;
+    font-family: var(--font-workSans);
+    letter-spacing: 2px;
+}
+
+.adress {
+    font-family: var(--font-opensans);
+    font-family: 1.2rem;
+    border-bottom: 0.2rem solid var(--color-text);
+}
+
+.contact-footer span {
+    color: var(--color-text);
+}
+
+.contact-footer a {
+    text-decoration: none;
+}
+.contact-footer ul li {
+    list-style: none;
+    color:#fff;
+    font-family: var(--font-workSans);
+    font-size: 1.1rem;
+}
 /* hearth */ 
 
 .hearth{
@@ -679,7 +741,13 @@ footer .texto-main {
         background-color: #fff;
         border-top: 0.2rem solid #000;
         border-bottom: 0.2rem solid #000;
-        margin-top: 1px;
+        margin-top: -32px;
+        color: #000;
+        font-size: 0.7rem;
+    }
+
+    .info-footer-container p{
+        padding: 0 15px;
     }
 
     .icon-adress span {
