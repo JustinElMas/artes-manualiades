@@ -494,6 +494,9 @@ footer .texto-main {
 
 .contact-footer a {
     text-decoration: none;
+    color:#000;
+    filter:drop-shadow(1px);
+    filter: drop-shadow(2px 3px 3px black);
 }
 .contact-footer ul li {
     list-style: none;
