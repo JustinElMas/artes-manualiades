@@ -491,6 +491,9 @@ footer .texto-main {
         flex-wrap: nowrap;
         margin-left: -95px;
     }
+    .redes-sociales {
+        margin-top: -4rem;
+    }
     .main-nav{
         transform: translateY(-305%);
         transition: transform 0.3s;
@@ -644,7 +647,7 @@ footer .texto-main {
         border-radius: 0 20px 20px 0;
         margin-top: 20px;
         width: 68%;
-        height: 3.7rem;
+        height: 4.69rem;
         margin-left: -2.3rem;
     }
 
@@ -664,8 +667,8 @@ footer .texto-main {
 
     .contenedor {
         text-align: center;
-        margin-bottom: -29px;
-        margin-top: -80px;
+        margin-bottom: 14px;
+        margin-top: -8px;
     }
 
     .infostore-p {
