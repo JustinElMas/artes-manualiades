@@ -705,6 +705,9 @@ footer .texto-main {
         font-size: 0.7rem;
         font-family: var(--font-oswald);
         font-weight: var(--bold-letter);
+        width: 100%;
+        border-radius: 0;
+        background: none;
     }
     .horarios {
         background-color: wheat;
@@ -718,7 +721,9 @@ footer .texto-main {
 
     .horarios ul li {
         list-style: none;
+        font-size: 0.75rem;
     }
+
     .adress {
         font-family: var(--font-workSans);
         font-weight: var(--bold-letter);
