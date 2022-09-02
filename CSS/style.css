@@ -392,7 +392,54 @@ footer .texto-main {
 /* form*/
 
 
-/* footer */ 
+/* ball-cp */ 
+
+.beneficio a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.title-form {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+}
+
+.text-form {
+    font-family: var(--font-oswald);
+    font-weight: var(--bold-letter);
+    font-size: 1.2rem;
+}
+
+.label-form {
+    font-family: var(--font-oswald);
+    font-size: 1.2rem;
+}
+
+/* cursos permanentes */
+
+.cursos-permanentes {
+    background-color: #ffaa64a2;
+    width: 100%;
+    height: 45vh;
+}
+
+.text-cp {
+    text-align: center;
+}
+
+.cursos {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: flex-end;
+    margin: 19px 0;
+    flex-direction: row;
+}
+
+
+.container-cp img {
+    width: 20%;
+    height: 20%;
+}
 
 .text-foot{
     text-align: center;
@@ -430,7 +477,7 @@ footer .texto-main {
 }
 
 .contact-footer ul {
-    color: #fff;
+    color: #000;
     font-family: var(--font-workSans);
     letter-spacing: 2px;
 }
@@ -675,6 +722,7 @@ footer .texto-main {
     .horarios ul li {
         list-style: none;
         font-size: 0.75rem;
+        color:#000;
     }
 
     .adress {
@@ -738,6 +786,37 @@ footer .texto-main {
         height: 9rem;
         margin: 0.4rem 5px;
         border: 0.4rem dotted #ffaa64;
+    }
+    .logo-svg {
+        width: 70%;
+        height: 50%;
+        margin: auto;
+    }
+    .form-container {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    .cursos-permanentes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .cursos-permanentes .cursos img {
+        height: 8rem;
+        width: 7rem;
+    }
+
+    .text-cp {
+        font-family: var(--font-serif);
+        font-weight: var(--bold-letter);
+    }
+    .horario-cp {
+        text-align: center;
+        font-family: var(--font-oswald);
+        font-size: 1.1rem;
+        font-weight: var(--bold-letter);
     }
 }
 @media  screen and (min-width: 780px) {
