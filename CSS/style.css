@@ -1,7 +1,7 @@
 /* Manejar SAAS variables de CSS, estructura de Koala, KOALA SCSS, por ejemplo: Lo díficil de cpiar y pegar los colores para el botón */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,500&family=Edu+QLD+Beginner:wght@400;500;700&family=Hachi+Maru+Pop&family=Noto+Serif:wght@400;700&family=Roboto:wght@400;700&family=Sigmar+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Skranji&display=swap');
 
 * {
     margin: 0;
@@ -24,7 +24,9 @@ html {
     --font-opensans:  'Open Sans', sans-serif;
     --font-serif: 'PT Serif', serif;
     --font-workSans: 'Sigmar One', cursive;
+    --font-cell: 'Skranji', cursive;
     --cursive:'Dancing Script', cursive;
+    --font-lobster: 'Lobster', cursive;
     --bold-letter: 700;
     --color-bg: #ffaa64;
     --color-hover: #c40fca;
@@ -55,10 +57,26 @@ html {
 }
 
 .logo {
-    height: 8rem;
-    padding: 1.5rem;
+    line-height: 20px;
+    margin-top: 20px;
+}
+.text-logo {
+    font-family: var(--font-lobster);
+    font-size: 1.5rem;
 }
 
+.text-logo::before {
+    content: "💫";
+}
+
+.logo p {
+    font-size: 0.8rem;
+}
+
+.logo:nth-child(2) {
+    font-size: 0.8rem;
+    margin-top: -2rem;
+}
 .logo img {
     margin-top: 0.00rem;
     display: block;
@@ -236,6 +254,22 @@ aside .items-article a{
     font-weight: var(--bold-letter);
     font-size: 1.2rem;
 }
+
+.container-articles h2 {
+    font-size: 0.9rem;
+}
+
+.container-articles h2 a {
+    color: #000;
+    font-weight: var(--bold-letter);
+    font-family: var(--font-cell);
+}
+.container-articles h2:hover {
+    border-bottom: 0.4rem solid #ffaa64;
+    width: 20%;
+    transition: 0.4s ease-in-out;
+}
+
 .title-main {
     text-align: center;
     font-size: 2.4rem;
@@ -417,10 +451,44 @@ footer .texto-main {
 
 /* cursos permanentes */
 
+.types-cp {
+    background: antiquewhite;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.horario-cp {
+    background: antiquewhite;
+    text-align: center;
+    font-weight: bold;
+}
+
 .cursos-permanentes {
     background-color: #ffaa64a2;
     width: 100%;
     height: 45vh;
+    margin-bottom: 1.5rem;
+}
+
+.types-cp ul li {
+    list-style: none;
+}
+
+.types-cp ul li::before {
+    content: "🎀";
+}
+
+.types-cp ul:hover{
+    width: 50%;
+    margin: auto;
+}
+
+.types-cp ul li:hover {
+    border-bottom: 0.3rem double #ffaa64;
+    cursor: pointer;
+    transition: 0.2s ease-in;
 }
 
 .text-cp {
@@ -550,7 +618,7 @@ footer .texto-main {
 @media screen and (max-width:700px) {
     .menu-navegacion {
         display: flex;
-        height: 12rem;
+        height: 6rem;
         flex-direction: column;
         text-align: center;
         flex-wrap: nowrap;
@@ -571,11 +639,24 @@ footer .texto-main {
 
     .toggle-menu {
         position: absolute;
-        top: 1px;
-        right: 3rem;
+        top: 23px;
+        right: 1rem;
         width: 40px;
         cursor: pointer;
         z-index: 1;
+    }
+
+    .types-cp {
+        background-color: #f231;
+        text-align: center;
+        font-family: var(--font-serif);
+        font-size: 1.2rem;
+    }
+    .types-cp ul li::before {
+        content: "💕";
+    }
+    .types-cp ul li {
+        list-style: none;
     }
 
     .main-menu--show{
@@ -591,6 +672,27 @@ footer .texto-main {
     }
     .logo {
         height: 10rem;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column-reverse;
+        display: flex;
+        margin-top: 69px;
+        margin-left: 21px;
+        background-color: #fff;
+        border-radius: 20px;
+        border: 0.3rem solid #000;
+        padding: 41px;
+    }
+
+    .logo p {
+        margin-bottom: -2px;
+    }
+    .altura-nav {
+        height: 12rem;
+        transition: height 0.8s ease;
+    }
+    .margentop {
+        margin-top: 0;
     }
     .btn-a {
         margin-bottom: 2rem;
@@ -817,6 +919,9 @@ footer .texto-main {
         font-family: var(--font-oswald);
         font-size: 1.1rem;
         font-weight: var(--bold-letter);
+    }
+    .text-logo::before {
+        content: "💫";
     }
 }
 @media  screen and (min-width: 780px) {
