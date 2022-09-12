@@ -370,6 +370,9 @@ footer .texto-main {
 
 .redes-sociales a{
     text-decoration: none;
+    background-color: var(--color-bg);
+    margin: 0 10px;
+    border-radius: 20px;
     color: var(--color-text);
     font-size: 2rem;
     padding: 0 1.1rem 0 1.1rem;
