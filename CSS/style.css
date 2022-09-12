@@ -719,7 +719,7 @@ footer .texto-main {
     }
 
     footer {
-        background: linear-gradient(rgba(236, 153, 84, 0.884), rgba(255, 255, 255, 0.65), rgba(255, 170, 100, 0.644)), url("../RECURSOS/Fondos/publicidad-de-amor-amistad.jpg");
+        /* background: linear-gradient(rgba(236, 153, 84, 0.884), rgba(255, 255, 255, 0.65), rgba(255, 170, 100, 0.644)), url("../RECURSOS/Fondos/publicidad-de-amor-amistad.jpg"); */
         color: var(--color-black);
         background-repeat: no-repeat;
         background-size: 272vw;
