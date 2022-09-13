@@ -59,6 +59,7 @@ html {
 .logo {
     line-height: 20px;
     margin-top: 20px;
+    cursor: pointer;
 }
 .text-logo {
     font-family: var(--font-lobster);
