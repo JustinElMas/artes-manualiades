@@ -1043,11 +1043,13 @@ footer .texto-main {
     }
 
     .acordeon__contenido img {
-        max-width: 100%; 
+        max-width: 100%;
         object-fit: cover;
         margin: 5px 0;
         border-radius: 20px;
         border: 0.2rem solid #ff9d4d;
+        float: none;
+        padding: 0;
     }
 
     .acordeon input:checked ~ .acordeon__contenido{
