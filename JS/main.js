@@ -10,6 +10,12 @@ toggleMenuelement.addEventListener('click', () => {
     marginTop.classList.toggle('margentop');
 })
 
+window.onload = function () {
+    let $containerCarga = document.getElementById('contenedor_carga');
+    $containerCarga.style.visibility = 'hidden';
+    $containerCarga.style.opacity = '0';
+}
+
 
 
 // una sección de cursos permanentes, la bolita quitar detalles poner cursos permanentes, quitar dinero, poner descipción de lo que es.

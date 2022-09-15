@@ -539,6 +539,46 @@ footer .texto-main {
     transition: 0.2s ease-in;
 }
 
+/* loader */
+
+#contenedor_carga {
+    background-color: palegoldenrod;
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    -webkit-transition: all 1s ease; 
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    z-index: 10000;
+}
+
+#carga {
+    border: 15px solid #000;
+    border-top-color: paleturquoise;
+    border-top-style: groove;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    animation: girar 1.5s linear infinite alternate;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .text-cp {
     text-align: center;
 }
@@ -701,6 +741,19 @@ footer .texto-main {
     }
     .types-cp ul li::before {
         content: "💕";
+    }
+
+    .cursos {
+        animation: escalar 1.2s infinite alternate;
+    }
+
+    @keyframes escalar {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.1);
+        }
     }
     .types-cp ul li {
         list-style: none;
