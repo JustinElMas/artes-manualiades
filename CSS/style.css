@@ -487,11 +487,13 @@ footer .texto-main {
 }
 
 .acordeon__contenido img {
-    max-width: 100%; 
+    max-width: 100%;
     object-fit: cover;
-    margin: 5px 0;
+    margin: 0px 0;
     border-radius: 20px;
-    border: 0.2rem solid #ff9d4d;
+    float: left;
+    width: 50%;
+    padding: 0 10px;
 }
 
 .acordeon input:checked ~ .acordeon__contenido{
@@ -542,7 +544,7 @@ footer .texto-main {
 /* loader */
 
 #contenedor_carga {
-    background-color: palegoldenrod;
+    background-color: var(--color-bg);
     height: 100vh;
     width: 100vw;
     position:fixed;
@@ -554,7 +556,7 @@ footer .texto-main {
 
 #carga {
     border: 15px solid #000;
-    border-top-color: paleturquoise;
+    border-top-color:#ff8017;
     border-top-style: groove;
     height: 10rem;
     width: 10rem;
@@ -1032,7 +1034,7 @@ footer .texto-main {
     }
 
     .acordeon__contenido {
-        width: 10rem; 
+        width: 7rem; 
         height: 8rem;
         height: 0;
         overflow: hidden;
