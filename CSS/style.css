@@ -1034,7 +1034,7 @@ footer .texto-main {
     }
 
     .acordeon__contenido {
-        width: 7rem; 
+        width: 12rem; 
         height: 8rem;
         height: 0;
         overflow: hidden;
