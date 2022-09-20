@@ -682,6 +682,7 @@ footer .texto-main {
     .titulohero {
         font-size: 1.5rem;
         margin-top: 1rem;
+        padding: 0 5px;
     }
     .textohero {
         font-size: 1.1rem;
@@ -790,7 +791,7 @@ footer .texto-main {
         margin-bottom: -2px;
     }
     .altura-nav {
-        height: 12rem;
+        height: 12.5rem;
         transition: height 0.8s ease;
     }
     .margentop {
