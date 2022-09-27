@@ -46,7 +46,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5.5rem;
+    height: 5.8rem;
     font-family: var(--font-opensans);
     font-weight: var(--bold-letter);
     font-size: 1.1rem;
