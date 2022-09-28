@@ -569,7 +569,7 @@ footer .texto-main {
     bottom: 0;
     margin: auto;
 
-    animation: girar 1.5s linear infinite alternate;
+    animation: girar 12s linear infinite alternate;
 }
 
 @keyframes girar {
