@@ -554,7 +554,7 @@ footer .texto-main {
     z-index: 10000;
 }
 
-#carga {
+#carga img{
     border: 15px solid #000;
     border-top-color:#ff8017;
     border-top-style: groove;
